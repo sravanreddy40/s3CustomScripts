@@ -13,4 +13,4 @@ with open('file_list.json','r') as jf:
 		if i['IsLatest'] == False:
                 	delete_command = 'aws s3api delete-object --bucket '+bucket+' --key '+i['Key']+' --version-id '+i['VersionId']
                 	os.system(delete_command)
-
+#Adding this line to test a PR
